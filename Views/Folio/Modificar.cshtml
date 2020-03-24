@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewBag.Title = "Modificar";
+}
+
+
+<div class="columns">
+    <div class="column is-3">
+        @Html.Partial("~/Views/PartialView/MenuFolio.cshtml")
+    </div>
+    <div class="column is-9">
+
+        <div class="card">
+            <div class="card-content">
+
+                <div class="level">
+
+                    <div class="level-item  has-text-centered">
+                        <h1 class="title">Modificar</h1>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+@section scripts{
+    <script>
+        var element = document.getElementById("aModificarMenuFolio");
+        element.classList.add("is-active");
+    </script>
+}
+

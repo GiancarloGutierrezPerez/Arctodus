@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@ViewBag.Usuario</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (ViewBag.UsuarioList != null)
+        {
+            foreach (var item in ViewBag.UsuarioList)
+            {
+                <tr>
+                    <td>@item.UsuarioId</td>
+                    <td>@item.Nombre</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+

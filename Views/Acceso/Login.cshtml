@@ -1,0 +1,56 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+    <section class="hero is-fullheight" style="background-image: url('../../Content/images/ArctodusBienvenida2.jpg'); background-size:cover;">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns is-centered">
+                    <div class="column"></div>
+                    <div class="column is-6-tablet is-5-desktop is-4-widescreen">
+
+                        <form action="@Url.Content("~/Acceso/ValidarLogin")" class="box" method="post">
+                            <div class="field">
+                                <label for="" class="label">Usuario</label>
+                                <div class="control has-icons-left">
+                                    <input type="text" placeholder="user" class="input" name="User" required>
+                                    <span class="icon is-small is-left">
+                                        <i class="fa fa-user"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label for="" class="label">Contraseña</label>
+                                <div class="control has-icons-left">
+                                    <input type="password" name="pass" placeholder="*******" class="input" required>
+                                    <span class="icon is-small is-left">
+                                        <i class="fa fa-lock"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <button class="button is-success">
+                                    Entrar
+                                </button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

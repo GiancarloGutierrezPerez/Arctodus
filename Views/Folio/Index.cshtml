@@ -1,0 +1,135 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+<div class="columns">
+    <div class="column is-3">
+        @Html.Partial("~/Views/PartialView/MenuFolio.cshtml")
+    </div>
+    <div class="column is-9">
+
+        <div class="card">
+            <div class="card-content">
+
+                <div class="level">
+
+                    <div class="level-item  has-text-centered">
+                        <h1 class="title">Generar</h1>
+                    </div>
+
+                </div>
+
+                <div class="columns">
+
+                    <div class="column">
+
+                        <div class="field">
+                            <label class="label">Grupo producto</label>
+                            <div class="control">
+                                <div class="select">
+                                    <select>
+                                        <option>Select dropdown</option>
+                                        <option>With options</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="column">
+
+                        <div class="field">
+                            <label class="label">Producto</label>
+                            <div class="control">
+                                <div class="select">
+                                    <select>
+                                        <option>Select dropdown</option>
+                                        <option>With options</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="column">
+
+                        <div class="field">
+                            <label class="label">Maquilador</label>
+                            <div class="control">
+                                <div class="select">
+                                    <select>
+                                        <option>Select dropdown</option>
+                                        <option>With options</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+
+
+                </div>
+                <div class="columns">
+
+                    <div class="column">
+
+                        <div class="field">
+                            <label class="label">Tinta Impresión</label>
+                            <div class="control">
+                                <div class="select">
+                                    <select>
+                                        <option>Select dropdown</option>
+                                        <option>With options</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="column">
+                        <div class="field">
+                            <label class="label">Orden de compra</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="Text input">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+
+                        <div class="field">
+                            <label class="label">Cantidad</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="Text input">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="column">
+                        <div class="field">
+                            <div class="control">
+                                <button class="button is-success">Enviar</button>
+                            </div>                           
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+@section scripts{
+    <script>
+        var element = document.getElementById("aGenerarMenuFolio");
+        element.classList.add("is-active");
+    </script>
+}
